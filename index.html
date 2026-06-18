@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -20,7 +21,17 @@
             <div class="logo_container">   
                 <img class="logo" src="imagenes/logo.png" alt="Logo">
             </div>     
-            <div class="menu_items">   
+            
+            <button class="hamburger hamburger--boring" 
+                    type="button" 
+                    id="hamburger">
+
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            
+            <div class="menu_items" id="menuItems">   
                 <a href="#" class="item_menu">Inicio</a>
                 <a href="#" class="item_menu">Servicios</a>
                 <a href="#" class="item_menu">Nosotros</a>
@@ -91,5 +102,17 @@
     <a href="https://wa.me/5491112345678" target="_blank" class="whatsapp">
         <img src="imagenes/whatsapp.png" alt="Whatsapp">
     </a>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const menuItems = document.getElementById("menuItems");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("is-active");
+            menuItems.classList.toggle("is-active");
+        });
+    </script>
+
+
 </body>
 </html>

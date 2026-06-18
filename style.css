@@ -15,6 +15,7 @@
     padding-bottom: 0rem;
     position:fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 .menu_items {
@@ -206,6 +207,44 @@
 .whatsapp img {
     width: 50px;
     height: 50px;
+}
+
+.hamburger {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .menu{
+        position: relative;
+    }
+
+    .hamburger {
+        display: block !important;
+        align-self: center;
+    }
+
+    .menu_items {
+        position:absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #a6a6a6;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;    
+    }
+
+    .menu_items.is-active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .item_menu {
+        margin: 0;
+        text-align: center;
+        border-top: solid 1px #7c7b7b;
+    }
 }
 
 
