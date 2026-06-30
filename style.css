@@ -1,3 +1,19 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+section,
+.cards,
+.nosotros,
+.home{
+    scroll-margin-top:5rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -213,9 +229,79 @@
     display: none !important;
 }
 
+.contacto {
+    background:#CCC;
+    padding:40px;
+    text-align:center;
+}
+
+.titulo_contacto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #b14421;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.formulario {
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding:15px;
+    font-size:16px;
+}
+
+.formulario textarea {
+    resize:none;
+    height:150px;
+}
+
+.formulario button {
+    padding:15px;
+    background:#b14421;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.formulario button:hover {
+    background:#92381b;
+}
+
+.contacto iframe {
+    margin-top: 1.5rem;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.footer {
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+    font-family:'Montserrat',sans-serif;
+}
+
+.footer p {
+    margin:10px;
+}
+
+
 @media (max-width: 768px) {
-    .menu{
-        position: relative;
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 
     .hamburger {
@@ -245,6 +331,42 @@
         text-align: center;
         border-top: solid 1px #7c7b7b;
     }
+
+    .columnas {
+        width:100%;
+    }
+
+    .title {
+        font-size:2rem;
+    }
+
+    .subtitle {
+        font-size:1.1rem;
+    }
+
+    .img_card_container {
+        width:100%;
+        max-width:350px;
+    }
+
+    .imagen_bloque_informativo {
+        width: 100%;
+        height: auto;
+    }
+
+    .home {
+        background-attachment: scroll;
+    }
+
+    .whatsapp img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .contacto iframe {
+        width: 100%;
+    }
+
 }
 
 

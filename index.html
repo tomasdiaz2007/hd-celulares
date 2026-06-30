@@ -32,21 +32,21 @@
             </button>
             
             <div class="menu_items" id="menuItems">   
-                <a href="#" class="item_menu">Inicio</a>
-                <a href="#" class="item_menu">Servicios</a>
-                <a href="#" class="item_menu">Nosotros</a>
-                <a href="#" class="item_menu">Contacto</a>
+                <a href="#inicio" class="item_menu">Inicio</a>
+                <a href="#servicios" class="item_menu">Servicios</a>
+                <a href="#nosotros" class="item_menu">Nosotros</a>
+                <a href="#contacto" class="item_menu">Contacto</a>
             </div>
         </nav>
 
-        <div class="home">
+        <div id="inicio" class="home">
             <div class="title_container">
                 <h1 class="title">HD Servicios</h1>
                 <h2 class="subtitle">Reparacion de celulares, computadoras y televisores.</h2>
             </div>
         </div>
 
-        <div class="cards">
+        <div id="servicios" class="cards">
             <div class="title_card_container" >
                 <h2 class="title_card">Nuestros Servicios</h2>
             </div>
@@ -78,7 +78,7 @@
         </div>
     
 
-        <div class="nosotros">
+        <div id="nosotros" class="nosotros">
             
             <h2 class="title_nosotros">¿Quienes Somos?</h2>
             
@@ -99,9 +99,37 @@
         </div>    
     </header>
 
+    <section id="contacto" class="contacto">
+        <h2 class="titulo_contacto">Contacto</h2>
+        <form class="formulario">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo electronico">
+            <input type="tel" placeholder="Telefono">
+            <textarea placeholder="Escriba su consulta"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <iframe
+            src="https://www.google.com/maps/embed?..."
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </section>
+
     <a href="https://wa.me/5491112345678" target="_blank" class="whatsapp">
         <img src="imagenes/whatsapp.png" alt="Whatsapp">
     </a>
+
+    
+    <footer class="footer">
+        <p>HD Servicios © 2026</p>
+        <p>Dirección: Calle Falsa 123</p>
+        <p>Teléfono: (011) 1234-5678</p>
+        <p>Email: contacto@hdservicios.com</p>
+    </footer>    
+
 
     <script>
         const hamburger = document.getElementById("hamburger");
